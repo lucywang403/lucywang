@@ -1,27 +1,17 @@
 <title> WELCOME </title>
 <h1 style "text-align:center;"> Food </h1>
 <body style="background-color:LightCyan;">
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<img id="myImage" onclick="changeImage()" src="http://www.cicis.com/media/1149/pizza_trad_cheese.png" width="300" height="300">
-
-<p>Click the cheese pizza and watch it gain more toppings!</p>
-
-<script>
-function changeImage() {
-    var image = document.getElementById('myImage');
-    if (image.src.match("bulbon")) {
-        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
-    } else {
-        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
-    }
-}
-</script>
-
-</body>
-</html>
-
+       
+        <p> Click the cheese pizza! </p>
+        <img src = "http://www.cicis.com/media/1149/pizza_trad_cheese.png" alt="Cheese-Pizza" id="myImage" onclick="changeImage()">
+        
+        <script>
+            function changeImage() {
+                //changes images when clicked, keep clicking!
+                var image = document.getElementById('myImage');
+                if (image.alt.match(Cheese-Pizza")) {
+                    image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+                    image.alt = "Pepperoni Pizza";
+                }
+            }
 
