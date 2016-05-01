@@ -4,4 +4,26 @@
 <img src= "http://www.cicis.com/media/1149/pizza_trad_cheese.png" alt="Cheese Pizza" style="width:304px;height:228px;">
 
 
+<!DOCTYPE html>
+<html>
+<body>
+
+<img id="myImage" onclick="changeImage()" src="http://www.cicis.com/media/1149/pizza_trad_cheese.png" width="100" height="180">
+
+<p>Click the cheese pizza and watch it gain more toppings!</p>
+
+<script>
+function changeImage() {
+    var image = document.getElementById('myImage');
+    if (image.src.match("bulbon")) {
+        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+    } else {
+        image.src = "http://www.cicis.com/media/1138/pizza_trad_pepperoni.png";
+    }
+}
+</script>
+
+</body>
+</html>
+
 
